@@ -31,5 +31,4 @@ for(let t=0; t<5; t++){ //打5次關卡
     sleep(12000);//暫停，可應對自動回體的狀況
 }
 var finish = require("./popup.js");
-finish("Finish 5 times playing!!!!", 15000, 0, 0, "#ffffff");
-alert("finish playing!");
+finish("Finish 5 times playing!!!!", 15000, 0, 300, "#ffffff");

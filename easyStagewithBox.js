@@ -1,5 +1,5 @@
 //重打關卡，需先進過關卡
-for(let t=0; t<5; t++){ //打5次關卡
+for(let t=0; t<10; t++){ //打5次關卡
     press(270, 750, 1000); //長按冒險按鈕
     sleep(5000);
     click(270, 450); //點關卡的畫面位置(需調整)
@@ -11,9 +11,11 @@ for(let t=0; t<5; t++){ //打5次關卡
     sleep(3000);
     //若沒體力，用體力罐
     click(120,660);//使用體力罐
-    sleep(2000)
+    sleep(3000)
     click(270, 630);//ok
-    sleep(1000)
+    sleep(2000)
+    click(150, 600); //單人按鈕
+    sleep(4000);
 
     click(270, 360); //幫手怪物選自己的
     sleep(3000);
@@ -31,5 +33,5 @@ for(let t=0; t<5; t++){ //打5次關卡
     sleep(12000);//暫停，可應對自動回體的狀況
 }
 var finish = require("./popup.js");
-finish("Finish 5 times playing!!!!", 15000, 0, 0, "#ffffff");
-alert("finish playing!");
+finish("Finish 5 times playing!!!!", 15000, 0, 300, "#ffffff");
+alert("Finish playing!!!");
