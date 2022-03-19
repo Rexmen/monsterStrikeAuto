@@ -1,12 +1,18 @@
-// var a = require("./popup.js");
+var thread = threads.start(function(){
+        let t=1;
+        var finish = require("./popup.js");
+        finish("test" + (t+1) +" yes!", 3000, 0, 100, "#ffffff");
+});
+// click(270,800);
+// sleep(1000);
 
-// a("Finish 10 times playing!!!!", 5000, 0, 300, "#ffffff");
+// finish("Finish "+ t +" times playing!!!!", 3000, 0, 100, "#ffffff");
 // console.log(files.cwd());
 // alert("Finish 10 times playing!!!");
 // click(270, 630);//ok
 // click(120,660);//體力罐
 // click(270, 500);//自己的怪物
-click(270,360);
+// click(270,450);
 // swipe(500,600,150,400,450);
 // click(120,640);
 // let uo = id("item").bounds(0,541,540,597).findOne();
