@@ -21,5 +21,7 @@ function mToast(str, time, x, y, color) {
     setTimeout(function () { toast.cancel(); }, time);
 }
 module.exports = mToast;
-// var message= "Finish 10 times playing!!!";
+
+// **Test run in this file**
+// var message= "can run in export file!!!";
 // mToast(message, 5000, 0, 0, "#ffffff");
